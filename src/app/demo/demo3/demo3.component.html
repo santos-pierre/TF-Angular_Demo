@@ -1,0 +1,9 @@
+<h3>Click Interaction</h3>
+
+<p>Mon numéro : {{numero}}</p>
+
+<button type="button" (click)="randomNumber()" (dblclick)="resetNumber()">Clique moi</button>
+
+<button type="button" [disabled]="isDisabled" >Désactiver</button>
+
+<button type="button" (click)="toggleButtonActive()">Toggle</button>
