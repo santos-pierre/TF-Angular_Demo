@@ -11,6 +11,8 @@ export class Demo4Component implements OnInit {
   age: number | undefined;
   birthDate: Date | undefined;
   price: number | undefined;
+  temperature: number = 30;
+  temperatureF: number = 86;
 
   constructor() { }
 

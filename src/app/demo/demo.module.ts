@@ -8,6 +8,8 @@ import { Demo1Component } from './demo1/demo1.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
+import { ToFarhenheitPipe } from '../pipes/to-farhenheit.pipe';
+import { TemperaturePipe } from '../pipes/temperature.pipe';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { Demo4Component } from './demo4/demo4.component';
     Demo1Component,
     Demo2Component,
     Demo3Component,
-    Demo4Component
+    Demo4Component,
+    ToFarhenheitPipe,
+    TemperaturePipe
   ],
   imports: [
     CommonModule,

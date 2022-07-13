@@ -9,3 +9,12 @@
 
 
 <p>Decimal: {{price | currency: 'EUR'}}</p>
+
+<hr>
+
+<h4>Custom Pipes</h4>
+<p>Température celsius: {{temperature}} => Température en F: {{temperature | toFarhenheit}}</p>
+<p>Valeur Température Celsius: {{temperature}}</p>
+<p>Valeur Température Farhenheit: {{temperatureF}}</p>
+<p>Température en Celsius : {{temperatureF | temperature: 'c'}}</p>
+<p>Conversion de {{temperature}} en Farhenheit : {{temperature | temperature: 'f'}}</p>
