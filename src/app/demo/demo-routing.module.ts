@@ -4,6 +4,7 @@ import { Demo1Component } from './demo1/demo1.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { DemoComponent } from './demo.component';
 import { Demo3Component } from './demo3/demo3.component';
+import { Demo4Component } from './demo4/demo4.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
       },
       {
         path: 'demo3', component: Demo3Component
+      },
+      {
+        path: 'demo4', component: Demo4Component
       }
     ]
   }

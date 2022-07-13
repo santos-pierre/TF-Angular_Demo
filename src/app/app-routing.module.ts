@@ -9,6 +9,9 @@ const routes: Routes = [
     path: 'demos', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
   },
   {
+    path: 'exos', loadChildren: () => import('./exo/exo.module').then(m => m.ExoModule)
+  },
+  {
     path: '', redirectTo: 'home', pathMatch: 'full'
   },
   {
