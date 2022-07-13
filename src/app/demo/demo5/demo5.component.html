@@ -1,0 +1,18 @@
+<h3>Components Directives</h3>
+
+<h4>NgStyle</h4>
+
+<p appHighlight [ngStyle]="currentStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officiis?</p>
+
+<input type="button" value="Bold" (click)="toggleBold()">
+<input type="button" value="Italic" (click)="toggleItalic()">
+<input type="button" value="Big" (click)="toggleSize()">
+
+
+<hr>
+
+<h4>NgClass</h4>
+
+<p class="transition-title" [ngClass]="{'myClass': isActive}">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, rem!</p>
+
+<input type="button" value="Toggle Class" (click)="toggleClass()">

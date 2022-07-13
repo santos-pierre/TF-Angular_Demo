@@ -1,0 +1,16 @@
+.transition-title {
+  transition: all .5s ease-in-out;
+}
+
+.myClass {
+  border: 3px dotted blue;
+  color: green;
+  font-size: 35px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: blue;
+    color: red;
+    border: 3px dotted green;
+  }
+}

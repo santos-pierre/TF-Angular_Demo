@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exo1Component implements OnInit {
 
-  constructor() { }
+  timer!: any;
+  temps: number = 0;
+
+  constructor() {}
 
   ngOnInit(): void {
+
+  }
+
+  start(){
+    this.timer = setInterval(() => {
+      this.temps++
+    }, 1000);
+  }
+
+  stop(){
+    clearInterval(this.timer);
+  }
+
+  reset(){
+    this.temps = 0;
+    this.stop();
   }
 
 }

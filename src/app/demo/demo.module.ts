@@ -10,6 +10,9 @@ import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
 import { ToFarhenheitPipe } from '../pipes/to-farhenheit.pipe';
 import { TemperaturePipe } from '../pipes/temperature.pipe';
+import { Demo5Component } from './demo5/demo5.component';
+import { Demo6Component } from './demo6/demo6.component';
+import { HighlightDirective } from '../directives/highlight.directive';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { TemperaturePipe } from '../pipes/temperature.pipe';
     Demo3Component,
     Demo4Component,
     ToFarhenheitPipe,
-    TemperaturePipe
+    TemperaturePipe,
+    Demo5Component,
+    Demo6Component,
+    HighlightDirective
   ],
   imports: [
     CommonModule,
