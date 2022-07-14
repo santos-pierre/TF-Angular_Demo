@@ -1,0 +1,5 @@
+<app-list-item *ngFor="let item of liste; index as i;"
+  [item]="item"
+  [index]="i"
+  (deleteItem)="removeItemList($event)"
+></app-list-item>

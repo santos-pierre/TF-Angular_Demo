@@ -60,6 +60,10 @@ export class NavComponent implements OnInit {
           {
             title: 'Exo1',
             url: '/exos/exo1'
+          },
+          {
+            title: 'Exo2',
+            url: '/exos/exo2'
           }
         ]
       }
