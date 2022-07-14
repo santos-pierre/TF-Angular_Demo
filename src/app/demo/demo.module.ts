@@ -15,6 +15,7 @@ import { Demo6Component } from './demo6/demo6.component';
 import { HighlightDirective } from '../directives/highlight.directive';
 import { Demo7Component } from './demo7/demo7.component';
 import { ChildrenComponent } from './demo7/children/children.component';
+import { Demo8Component } from './demo8/demo8.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ChildrenComponent } from './demo7/children/children.component';
     Demo6Component,
     HighlightDirective,
     Demo7Component,
-    ChildrenComponent
+    ChildrenComponent,
+    Demo8Component
   ],
   imports: [
     CommonModule,
