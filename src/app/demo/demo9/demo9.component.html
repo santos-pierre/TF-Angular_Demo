@@ -1,0 +1,27 @@
+<h3>Forms</h3>
+<form [formGroup]="myFormGroup" (ngSubmit)="submit()">
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input type="text" formControlName="name">
+  </div>
+  <div>
+    <label for="email">
+      Email
+    </label>
+    <input type="email" formControlName="email">
+
+    <p *ngIf="!myFormGroup.get('email')?.valid" style="color: red">
+      Email pas valide
+    </p>
+  </div>
+
+  <div *ngFor="let f of getArrayControl().controls; index as i;">
+    <input type="text" [formControlName]="i">
+  </div>
+
+  <button>Send</button>
+</form>
+
+{{myFormGroup.status}}

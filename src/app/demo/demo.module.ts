@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoComponent } from './demo.component';
@@ -16,6 +16,7 @@ import { HighlightDirective } from '../directives/highlight.directive';
 import { Demo7Component } from './demo7/demo7.component';
 import { ChildrenComponent } from './demo7/children/children.component';
 import { Demo8Component } from './demo8/demo8.component';
+import { Demo9Component } from './demo9/demo9.component';
 
 
 @NgModule({
@@ -32,11 +33,13 @@ import { Demo8Component } from './demo8/demo8.component';
     HighlightDirective,
     Demo7Component,
     ChildrenComponent,
-    Demo8Component
+    Demo8Component,
+    Demo9Component
   ],
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     DemoRoutingModule
   ],
   bootstrap: [DemoComponent]
