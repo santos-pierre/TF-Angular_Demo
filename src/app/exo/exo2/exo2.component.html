@@ -3,4 +3,4 @@
 <input type="text" #article>
 <input type="button" value="Ajouter" (click)="ajout(article.value)">
 
-<app-list [liste]="liste"></app-list>
+<app-list [liste]="liste" (removeListItem)="delete($event)"></app-list>

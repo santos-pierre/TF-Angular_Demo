@@ -18,4 +18,8 @@ export class Exo2Component implements OnInit {
     this.liste.push(value);
   }
 
+  delete(index: number) {
+    this.liste.splice(index, 1);
+  }
+
 }
