@@ -1,0 +1,8 @@
+<h3>Input/Output</h3>
+
+<h4>Salut {{selectedChildren ? selectedChildren : 'Tout Le Monde'}}</h4>
+
+<app-children *ngFor="let children of listChildren"
+  [name]="children"
+  (sayHi)="reactToChildren($event)"
+></app-children>

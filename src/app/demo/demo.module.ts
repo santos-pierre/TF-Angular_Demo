@@ -13,6 +13,8 @@ import { TemperaturePipe } from '../pipes/temperature.pipe';
 import { Demo5Component } from './demo5/demo5.component';
 import { Demo6Component } from './demo6/demo6.component';
 import { HighlightDirective } from '../directives/highlight.directive';
+import { Demo7Component } from './demo7/demo7.component';
+import { ChildrenComponent } from './demo7/children/children.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { HighlightDirective } from '../directives/highlight.directive';
     TemperaturePipe,
     Demo5Component,
     Demo6Component,
-    HighlightDirective
+    HighlightDirective,
+    Demo7Component,
+    ChildrenComponent
   ],
   imports: [
     CommonModule,
