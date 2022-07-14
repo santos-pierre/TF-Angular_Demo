@@ -60,6 +60,18 @@ export class NavComponent implements OnInit {
           {
             title: 'Demo 9',
             url: '/demos/demo9'
+          },
+          {
+            title: 'Demo 10',
+            url: '/demos/demo10'
+          },
+          {
+            title: 'Demo 11',
+            url: '/demos/demo11'
+          },
+          {
+            title: 'Demo 12',
+            url: '/demos/demo12',
           }
         ]
       },

@@ -1,0 +1,11 @@
+<h3>Custom Validators</h3>
+
+<form [formGroup]="myFormGroup">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+  <p *ngIf="myFormGroup.controls['name'].invalid">
+    {{myFormGroup.controls['name'].getError('TropCourt')}}
+  </p>
+</form>
