@@ -21,6 +21,8 @@ import { Demo10Component } from './demo10/demo10.component';
 import { ParamsComponent } from './demo10/params/params.component';
 import { Demo11Component } from './demo11/demo11.component';
 import { Demo12Component } from './demo12/demo12.component';
+import { Demo13Component } from './demo13/demo13.component';
+import { UserComponent } from './demo13/user/user.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { Demo12Component } from './demo12/demo12.component';
     Demo10Component,
     ParamsComponent,
     Demo11Component,
-    Demo12Component
+    Demo12Component,
+    Demo13Component,
+    UserComponent
   ],
   imports: [
     CommonModule,

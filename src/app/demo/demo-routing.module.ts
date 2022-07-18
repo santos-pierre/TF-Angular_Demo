@@ -15,6 +15,8 @@ import { ParamsComponent } from './demo10/params/params.component';
 import { Demo11Component } from './demo11/demo11.component';
 import { Demo12Component } from './demo12/demo12.component';
 import { AuthGuard } from './demo12/auth-guard.guard';
+import { Demo13Component } from './demo13/demo13.component';
+import { UserComponent } from './demo13/user/user.component';
 
 const routes: Routes = [
   {
@@ -54,6 +56,12 @@ const routes: Routes = [
       },
       {
         path: 'demo12', canActivate: [AuthGuard], component: Demo12Component
+      },
+      {
+        path: 'demo13', component: Demo13Component
+      },
+      {
+        path: 'demo13/users/:id', component: UserComponent
       },
       {
         path: 'param/:param', component: ParamsComponent
