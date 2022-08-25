@@ -4,13 +4,13 @@
     <label for="name">
       Name
     </label>
-    <input type="text" formControlName="name">
+    <input type="text" formGroupName="name">
   </div>
   <div>
     <label for="email">
       Email
     </label>
-    <input type="email" formControlName="email">
+    <input type="email" formGroupName="email">
 
     <p *ngIf="!myFormGroup.get('email')?.valid" style="color: red">
       {{myFormGroup.controls['email'].getError('required')}}
@@ -18,7 +18,7 @@
   </div>
 
   <div *ngFor="let f of getArrayControl().controls; index as i;">
-    <input type="text" [formControlName]="i">
+    <input type="text" [formGroupName]="i">
   </div>
 
   <button>Send</button>

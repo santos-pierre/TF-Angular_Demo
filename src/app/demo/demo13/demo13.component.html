@@ -4,4 +4,5 @@
   <a *ngFor="let user of users" [routerLink]="['users/' + user.id]">
     <li>{{user.name}}</li>
   </a>
+	<button (click)="addUser()">Add</button>
 </ul>

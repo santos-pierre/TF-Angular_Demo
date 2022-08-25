@@ -24,13 +24,11 @@ export class Demo9Component implements OnInit {
 
     this.getArrayControl().push(new FormControl(null, null));
 
-    console.log(this.myFormGroup.controls);
   }
 
   getArrayControl() {
     return this.myFormGroup.get('subForm') as FormArray
   }
-
 
 
   submit() {
